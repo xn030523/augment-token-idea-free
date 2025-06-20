@@ -57,7 +57,7 @@ Token池插件是 Augment 开发生态系统的重要组成部分，与以下平
 ---
 
 ## 📥 快速安装
-1. 下载最新版本：[GitHub Releases](https://github.com/xn030523/augment-token-idea/releases)
+1. 下载最新版本：[GitHub Releases](https://github.com/xn030523/augment-token-idea-free/releases)
 2. `File → Settings → Plugins → ⚙️ → Install Plugin from Disk...`
 3. 选择下载的zip文件并安装
 
