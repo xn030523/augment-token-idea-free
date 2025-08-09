@@ -1,18 +1,4 @@
 # 🎯 Token池 - Augment OAuth 凭证管理插件
-
-<div align="center">
-
-![Token池](https://img.shields.io/badge/Token池-v1.1.0-blue.svg)
-![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-2023.1+-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![QQ群](https://img.shields.io/badge/QQ群-1017212982-red.svg)
-
-**一个专业的 Augment OAuth 凭证管理插件，提供无感换号、Token池管理等强大功能**
-
-[📥 快速安装](#-快速安装) • [🎯 核心功能](#-核心功能) • [🌐 生态系统](#-完整生态系统) • [💬 技术支持](#-技术支持)
-
-</div>
-
 ---
 
 ## 🌐 完整生态系统
@@ -23,19 +9,7 @@ Token池插件是 Augment 开发生态系统的重要组成部分，与以下平
 
 | 平台 | 地址 | 功能描述 |
 |------|------|----------|
-| 🎯 **Token池管理平台** | [augment.184772.xyz](https://augment.184772.xyz) | Token池管理、用户认证、API服务 |
-| 📧 **Go-Email邮箱服务** | [gomail.184772.xyz](https://gomail.184772.xyz) | 临时邮箱、邮件接收、验证码获取 |
-| 🔧 **IDEA插件** | 本插件 | 无感换号、凭证管理、自动切换 |
-
-### 🔄 工作流程
-
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Go-Email      │    │   Token池       │    │   IDEA插件      │
-│   邮箱服务      │───▶│   管理平台      │───▶│   无感换号      │
-│                 │    │                 │    │                 │
-```
----
+| 🎯 **Token池管理平台** | [token 提取](https://augmenttoken.159email.shop/) | Token池管理、用户认证、API服务 |
 
 ## 🎯 核心功能
 
@@ -57,43 +31,8 @@ Token池插件是 Augment 开发生态系统的重要组成部分，与以下平
 
 ---
 
-## 📥 快速安装
-1. 下载最新版本：[GitHub Releases](https://github.com/xn030523/augment-token-idea-free/releases)
-2. `File → Settings → Plugins → ⚙️ → Install Plugin from Disk...`
-3. 选择下载的zip文件并安装
 
-> 📖 详细安装指南请参考：[INSTALL.md](./INSTALL.md)
-
----
-
-## 🚀 快速开始
-
-### 第一步：准备工作
-
-1. **获取临时邮箱**
-   - 访问 [gomail.184772.xyz](https://gomail.184772.xyz)
-   - 获取临时邮箱地址用于注册
-
-2. **注册Augment账号**
-   - 使用临时邮箱注册Augment账号
-   - 完成邮箱验证
-
-3. **获取Personal Token**
-   - 登录 [augment.184772.xyz](https://augment.184772.xyz)
-   - 在个人设置中生成Personal Token
-
-### 第二步：插件配置
-
-1. **打开插件设置**
-   ```
-   File → Settings → Tools → Token池
-   ```
-
-2. **配置Personal Token**
-   - 输入从管理平台获取的Personal Token
-   - 点击"验证Token"确认有效性
-
-3. **开始使用**
+1. **开始使用**
    - 使用"无感换号"功能自动获取最优凭证
    - 享受无缝的开发体验
 
@@ -114,21 +53,6 @@ Token池插件是 Augment 开发生态系统的重要组成部分，与以下平
 - 实时监控Token使用情况
 
 ---
-
-## 🔧 高级功能
-
-### API集成
-插件与以下API完美集成：
-
-- **用户信息API**: `/api/user/info?token={token}`
-- **Token池API**: `/api/tokens`
-- **状态检查**: 实时验证Token有效性
-
-### 智能算法
-- **负载均衡**: 智能选择使用次数最少的Token
-- **故障转移**: 自动切换到可用凭证
-- **状态缓存**: 优化API调用性能
-
 ---
 
 ## 💬 技术支持
@@ -136,58 +60,14 @@ Token池插件是 Augment 开发生态系统的重要组成部分，与以下平
 ### 🆘 获取帮助
 
 - **QQ技术群**: [1017212982](https://qm.qq.com/cgi-bin/qm/qr?k=xxx) 
-- **GitHub Issues**: [提交问题](https://github.com/xn030523/augment-token-idea/issues)
-- **邮件支持**: 通过 [gomail.184772.xyz](https://gomail.184772.xyz) 联系
-
-### 📚 相关资源
-
-- **管理平台**: [augment.184772.xyz](https://augment.184772.xyz)
-- **邮箱服务**: [gomail.184772.xyz](https://gomail.184772.xyz)
-- **插件源码**: [GitHub仓库](https://github.com/xn030523/augment-token-idea-free.git)
-
 ### 🐛 问题反馈
 
 遇到问题？请提供以下信息：
-- IDEA版本和插件版本
+- vscode版本和插件版本
 - 错误日志和截图
 - 复现步骤
 
 ---
-
-## 🔄 更新日志
-
-### v1.4.0 (2025-06-24) - 🔧 API修复与优化
-- 🛠️ **修复Token删除API** - 修正API端点
-- 🌐 **HTTP方法修复** - 使用正确的DELETE方法替代POST方法
-- 📋 **API规范对齐** - 严格按照API文档实现Token删除功能
-- 🔍 **增强调试日志** - 添加详细的API调用和响应日志
-- 🚨 **错误诊断优化** - 提供更清晰的删除失败原因分析
-- 🎯 **RESTful规范** - 遵循标准的RESTful API设计原则
-- ✅ **响应格式验证** - 正确解析 {"status": "success"} 响应格式
-
-
-
-### v1.3.0 (2025-06-23) - 🔥 重大功能更新
-- 🗑️ **新增：自动删除已使用Token功能** - 无感换号成功后自动删除已使用的Token
-- ♻️ **消费即删除机制** - 实现Token使用后自动从池中移除，避免重复使用
-- 🎯 **完整无感换号流程**：获取最优Token → 注入凭证 → 生成SessionID → 删除已使用Token
-- 📊 **增强状态反馈** - 详细显示Token删除结果和操作状态
-- 🔄 **后台异步删除** - Token删除在后台进行，不影响用户体验
-- ⚠️ **智能错误处理** - 删除失败时提供详细错误信息和建议
-- 💡 **保持池子干净** - 确保Token池只保留未使用的Token，提高使用效率
-
-
-### v1.1.0 (2025-06-20)
-- 🔧 修复Token验证逻辑，正确解析API响应格式
-- ✅ 支持"status":"success"响应格式验证
-- 📝 更新插件描述，详细说明无感换号功能
-- 💬 添加QQ群技术支持信息
-- 🎯 完善无感换号功能说明和使用指南
-
-[查看完整更新日志](./CHANGELOG.md)
-
----
-
 
 
 ## 👨‍💻 开发者
